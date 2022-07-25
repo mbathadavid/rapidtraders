@@ -1,3 +1,18 @@
+<?php
+session_start();
+    if( isset( $_SESSION['user'] ) ) {
+        header("Location: dashboard.php");
+        exit();
+    }else {
+        
+    }
+//$loggeduserdetails = $_SESSION['user'];
+    // if (count($loggeduserdetails) > 0) {
+    //     header("Location: dashboard.php");
+    //     exit();
+    // } 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +40,7 @@
                 </div>
                     <input type="submit" name="submit" id="submitbtn" value="LOGIN" class="form-control btn btn-danger">
             </form>
-            <h6 class="text-info text-center">Do not have account? <a href="index.php">Create Account</a></h6>
+            <h6 class="text-info text-center">Do not have account? <a href="createaccount.php">Create Account</a></h6>
             <h5 class="text-info text-center">Forgot Password? <a href="pass-reset.php">Reset Password</a></h5>
         </div>
      </div>   

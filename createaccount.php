@@ -1,3 +1,19 @@
+<?php
+session_start();
+if( isset( $_SESSION['user'] ) ) {
+    header("Location: dashboard.php");
+    exit();
+}else {
+    
+}
+
+// $loggeduserdetails = $_SESSION['user'];
+//     if (count($loggeduserdetails) > 1) {
+//         header("Location: login.php");
+//         exit();
+//     } 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

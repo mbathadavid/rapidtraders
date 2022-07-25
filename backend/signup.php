@@ -14,7 +14,7 @@ header("Content-type:application/json");
 // require 'mail\src\PHPMailer.php';
 // require 'mail\src\SMTP.php';
 
-$mail = new PHPMailer(TRUE);
+//$mail = new PHPMailer(TRUE);
 
 $db = new Auth();
 
